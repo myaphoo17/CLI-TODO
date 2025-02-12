@@ -94,6 +94,7 @@ func CreateAndInitializeDatabase() {
 	`)
 	if err != nil {
 		fmt.Println("Error creating tasks table:", err)
+		fmt.Println("Please check your database configuration and try again.")
 		os.Exit(1)
 	}
 	fmt.Println("Database initialized successfully!")
